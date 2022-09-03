@@ -1,4 +1,4 @@
-const alarm = new Audio;
+const alarm = new Audio('assets/alarm.mp3');
 const playTimerButton = document.getElementById('playTimer');
 const pauseTimerButton = document.getElementById('pauseTimer');
 const reLoadButton = document.getElementById('reLoadTimer')
