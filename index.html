@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fullScreen">
+        <header class="header">
+            <img src="assets/icons/tomato.png" alt="logo-pomodoro" class="logo">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+        </header>
+        <main class="main">
+            <ul class="timerStage">
+                <h2 id="workStage">
+                    Work
+                </h2>
+                <h2 id="breakStage">
+                    Break
+                </h2>
+                <h2 id="longBreakStage">
+                    Long break
+                </h2>
+            </ul>
+            <div class="timerCircle">
+                <div class="timer">
+                    <span><h3 id="clockCtn">25:00</h3></span>
+                </div>
+            </div>
+            <ul class="timerButtons">
+                <li>
+                    <button id="playTimer">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </li>
+                <li>
+                    <button id="pauseTimer">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                </li>
+                <li>
+                    <button id="reLoadTimer">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </li>
+            </ul>
+            <ul class="stats">
+                <li>
+                    Work
+                    <span id="workCounterCtn">0</span>
+                </li>
+                <li>
+                    Break
+                    <span id="breakCounterCtn">0</span>
+                </li>
+                <li>
+                    Cicles
+                    <span id="ciclesCounterCtn">0</span>
+                </li>
+            </ul>
+            <ul class="goal">
+                <li>
+                    Goal 
+                    <span id="goalTimeCtn">0</span>Hours
+                </li>
+                <li>
+                    Time Work
+                    <span id="timeWorkedCtn">0 Hours</span>
+                </li>
+            </ul>
+        </main>
+        <div class="goalForm">
+            <label for="goalTimeInput">how many hours do you want work?</label>
+            <input type="number" placeholder="8" id="goalTimeInput">
+            <button id="sendGoalTime">Send</button>
+        </div>
+        <footer>
+            <p>Made by josemontesdeoca00@gmail.com</p>
+        </footer>
+    </div>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/964b0e3f45.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
