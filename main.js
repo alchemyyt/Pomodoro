@@ -11,7 +11,6 @@ const breakStage = document.getElementById('breakStage')
 const longBreakStage = document.getElementById('longBreakStage')
 const timeWorkedCtn = document.getElementById('timeWorkedCtn')
 const goalTimeCtn = document.getElementById('goalTimeCtn')
-const goalTimeInput = document.getElementById('goalTimeInput')
 const sendGoalTime = document.getElementById('sendGoalTime')
 let hoursMeter = 0;
 let workCounter = 0;
@@ -20,10 +19,12 @@ let ciclesCounter = 0;
 let second = 00;
 let minute = 25;
 let mode = 0;
-let goalTime =goalTimeInput.value;
 /*Nose porque no escribe esto arreglar bug*/
 sendGoalTime.addEventListener('click',printGoalTime)
 function printGoalTime() {
+    //El valor y el input tiene que estar adentro de la funcion pa que cada vez que se le de click se actualize tanto el valor del input y tambien que se vuelva a actualizar la variable
+    let goalTimeInput = document.getElementById('goalTimeInput')
+    let goalTime = goalTimeInput.value;
     goalTimeCtn.innerHTML=goalTime;
 }
 playTimerButton.addEventListener('click',playTimer);
